@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Submitted Thoughts</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <form onsubmit="submitThought(event)">
+        <textarea id="userThought" placeholder="Enter your thought here..."></textarea>
+        <button type="submit">Submit Thought</button>
+      </form>
+      
+      <h2>Your Submitted Thoughts:</h2>
+      <ul id="submittedThoughtsList"></ul>
+
+      <script src="thoughts.js"></script>
+
+      <button onclick="changePage()">Back to thoughts</button>
+</body>
+</html>
