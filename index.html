@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thought Generator</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Thought Generator</h1>
+    
+    <!-- Language Selector -->
+    <select id="languageSelect" onchange="changeLanguage()">
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="fr">Français</option>
+      <option value="sv">Svenska</option>
+    </select>
+
+    <p id="thought">Click the button for a deep thought...</p>
+    <button onclick="generateThought()">Give me a thought</button>
+
+    <!-- Dark Mode Toggle and Label -->
+    <div class="dark-mode-container">
+      <p style="font-size: 1rem; margin-right: 10px;">Dark Mode</p>
+      <label class="switch">
+        <input type="checkbox" id="darkModeToggle" onchange="toggleDarkMode()" />
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  
+  <button onclick="changePage()">Your thoughts</button>
+  
+</body>
+</html>
