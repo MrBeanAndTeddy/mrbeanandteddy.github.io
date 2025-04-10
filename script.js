@@ -70,21 +70,6 @@ const translations = {
   
   let currentLanguage = 'en';
 
-
-// Generate a thought based on selected language
-function generateThought() {
-  const currentThoughts = translations[currentLanguage];
-  const randomIndex = Math.floor(Math.random() * currentThoughts.length);
-  document.getElementById('thought').textContent = currentThoughts[randomIndex];
-}
-
-// Handle language change
-function changeLanguage() {
-  const select = document.getElementById('languageSelect');
-  currentLanguage = select.value;
-  generateThought();
-}
-
 // Toogle Dark
 function toggleDarkMode() {
   document.body.classList.toggle("dark");
@@ -101,10 +86,9 @@ window.onload = () => {
     document.body.classList.add("dark");
     document.getElementById('darkModeToggle').checked = true;
   }
-  generateThought(); // show a new thought when the page loads
 };
 
 function changePage() {
   // Navigate to the local page 'page2.html'
-  window.location.href = 'thoughts.html';
+  window.location.href = 'projects.html';
 }
